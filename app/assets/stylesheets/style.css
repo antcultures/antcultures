@@ -4067,7 +4067,9 @@ img.round {
 
 #bdiv {
   position:absolute;
-  background:url(home/background.jpg) no-repeat;
+  background-image: url('home/background.jpg') ;
+
+	  
   background-size:cover;
   height:100%;
   width:100%;
