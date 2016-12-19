@@ -1,0 +1,143 @@
+<!-- 헤더바 부분 -->
+<header id="top" class="navbar" role="banner">
+		<div class="container">
+			<div class="inner">
+
+				<div class="site-title">
+					<h1><a href="index.html"><%= image_tag 'logo.png', width:'144', height:'52', alt:'Logo' %></a></h1>
+					<a href="#site-menu" class="site-menu-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<em class="first"></em><em class="middle"></em><em class="last"></em>
+					</a>
+				</div>
+
+				<div id="site-menu">
+					<nav>
+						<ul>
+							<li ><a href="index.html" class="menuBtn">Home</a></li>
+							<li><a href="about.html" class="menuBtn">About</a></li>
+							<li><a href="project.html" class="menuBtn">Project</a></li>
+							<li><a href="item.html" class="menuBtn">HanNol</a></li>
+							<li><a href="media.html" class="menuBtn">Media</a></li>
+							<li class="current-menu-item"><a href="contact.html" class="menuBtn">Contact</a></li>
+							
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</header>
+<!-- 헤더바 부분 종료 -->
+
+<!-- 메인 부분 시작 -->
+
+<div id="hero" class="map-section">
+		<div class="inner map-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-6">
+						<h3>Contact Us</h3>
+						<p>
+							AnT를 통하여 개인들은 자신들의 꿈을 실현시키며 성장해 나가고 우리 사회는 새롭고 재미난 문화들로 가득 찰 수 있을 거라 자신합니다.
+							
+							
+						</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="gmap" class="map"></div>
+		<a href="#gmap" id="close-map"><i class="fa fa-times"></i></a>
+	</div>
+
+	<main id="content" class="white-background" role="main">
+		<div class="container">
+			<div class="inner">
+				<div class="margin-6"></div>
+				<div class="row" >
+					<div class="sign col-sm-5 col-md-4 project-properties" style="text-align:center">
+						
+						<div id="border">
+							<%= image_tag "logo_sim.png"%>
+							<div class="margin-1"></div>
+							<h6>AnT 문화기획사</h6>
+							<p class="small">
+								culture director
+							<br>
+							<br>
+								<i class="fa fa-map-marker" aria-hidden="true"></i> 충청남도 천안시 서북구 성환읍<br>
+								대학로91 남서울대학교 지식정보관 328호
+							<br>
+							<br>
+								<i class="fa fa-phone" aria-hidden="true"></i> 010.8761.4235 <br>
+								<i class="fa fa-envelope" aria-hidden="true"></i> antcultures@gmail.com
+							<br>
+							<br>
+								<a href="" style="color:#66757f"><i class="fa fa-home" aria-hidden="true"></i> www.antcultures.net</a><br>
+								<a href="https://www.facebook.com/AlleyNT/?fref=ts"style="color:#66757f" ><i class="fa fa-facebook"></i> AnT - alleytainment</a><br>
+								<a href="https://www.youtube.com/channel/UCdJkxbgtoBqsXBFcQY9yhTA"style="color:#66757f" ><i class="fa fa-youtube-play" aria-hidden="true"></i> 에이앤티컬처</a>
+								
+							</p>
+						</div>
+						
+					</div>
+					<div class="col-sm-6 col-sm-offset-1 col-md-offset-2">
+						<h5>Send a Message</h5>
+						<div class="sep red margin-2"></div>
+						<form action="contact1.html" class="no-bottom">
+							<div class="row">
+								<div class="col-sm-6">
+									<label for="name" class="sr-only">Name</label>
+									<input type="text" class="underline" name="name" id="name" placeholder="Your name..." required>
+									<div class="margin-3"></div>
+								</div>
+								<div class="col-sm-6">
+									<label for="email" class="sr-only">Email</label>
+									<input type="email" class="underline" name="email" id="email" placeholder="Your email..." required>
+									<div class="margin-3"></div>
+								</div>
+							</div>
+							<label for="message" class="sr-only">Message</label>
+							<textarea class="underline" name="message" id="message" cols="30" rows="8" placeholder="Here goes the message..." required></textarea>
+							<div class="margin-2"></div>
+							<input type="submit" value="Send Message">
+						</form>
+					</div>
+				</div>
+				<div class="margin-6"></div>
+			</div>
+		</div>
+	</main>
+
+
+
+<!-- 메인 부분 종료 -->
+
+
+<!-- 푸터바 부분 -->
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<p>
+				<a href="index.html" class="mini-logo"><%= image_tag 'logo-footer.png', width:'90', height:'33', alt:'Logo' %></a>
+			</p>
+			<p>&copy; <b>AnT</b> 대표 임희용 │ 사업자등록번호. 722-09-00160
+			<br>OFFICE. 천안 서북구 성환읍 대학로 91 남서울대학교 지식정보관 328호
+			<br>Email. antcultures@gmail.com │ TEL. 010-8761-4235 </p>
+			<p></p>
+			<p>
+				
+				<a href="contact.html" class="social-link"><i class="fa fa-address-book"></i></a>
+				<a href="https://www.youtube.com/channel/UCdJkxbgtoBqsXBFcQY9yhTA" class="social-link"><i class="fa fa-youtube-play"></i></a>
+				<a href="https://www.facebook.com/AlleyNT/?fref=ts" class="social-link"><i class="fa fa-facebook"></i></a>
+			</p>
+		</div>
+	</footer>
+<!--푸터바 부분 종료 -->
+
+<script>
+	$(".menuBtn").click(function(){
+			 window.location.reload();
+		})
+</script>

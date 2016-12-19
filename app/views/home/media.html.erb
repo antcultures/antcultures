@@ -1,0 +1,238 @@
+
+<!-- 헤더바 부분 -->
+<header id="top" class="navbar" role="banner">
+		<div class="container">
+			<div class="inner">
+
+				<div class="site-title">
+					<h1><a href="index.html"><%= image_tag 'logo.png', width:'144', height:'52', alt:'Logo' %></a></h1>
+					<a href="#site-menu" class="site-menu-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<em class="first"></em><em class="middle"></em><em class="last"></em>
+					</a>
+				</div>
+
+				<div id="site-menu">
+					<nav>
+						<ul>
+							<li ><a href="index.html" class="menuBtn">Home</a></li>
+							<li><a href="about.html" class="menuBtn">About</a></li>
+							<li><a href="project.html" class="menuBtn">Project</a></li>
+							<li><a href="item.html" class="menuBtn">HanNol</a></li>
+							<li class="current-menu-item" class="menuBtn"><a href="media.html">Media</a></li>
+							<li><a href="contact.html" class="menuBtn">Contact</a></li>
+							
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</header>
+<!-- 헤더바 부분 종료 -->
+
+<!-- 메인 부분 시작 -->
+
+<main id="content" class="mainview" role="main">
+		<div class="container container-masonry">
+			<div class="inner">
+				<div class="row">
+
+					<div class="box col-sm-7 col-md-6">
+						<div class="thumb featured">
+							<div class="photo">
+								<a href="https://www.youtube.com/channel/UCdJkxbgtoBqsXBFcQY9yhTA">
+									<%= image_tag 'project/1/main.jpg', width:'715', height:'715' %>
+									<span class="info"><strong class="big-title">UNIVALUE,<br> A new type of 'open college'</strong>
+									<span class="excerpt">다양하고 재미난 생각들이 의미 있는 시간을 만들어 냅니다.</span><em class="arrow-right"></em></span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="box col-sm-5 col-md-3">
+						<div class="post-box vertical clearfix">
+							<a onclick="Show(1)" class="image-link arrow-icon"><%= image_tag 'media/pic/1.jpg', width:'434', height:'434' %></a>
+							<div class="extra-info">
+								<p class="meta small">2015.05 ~ 2015.10 </p>
+								<h5><a onclick="Show(1)">해방촌 지역문화콘텐츠 기획 프로젝트 UCC '해방촌의 하루'</a></h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="box col-sm-6 col-md-3">
+						<div class="post-box vertical clearfix">
+							<div class="extra-info">
+								<p class="meta small">2016.09.27 ~ 2016.09.29</a></p>
+								<h5><a onclick="Show(2)">2016 백석대학교 한복축제 메인홍보영상</a></h5>
+							</div>
+							<a onclick="Show(2)" class="image-link arrow-icon dark-overlay"><%= image_tag 'project/2/main.jpg', width:'434', height:'434' %></a>
+						</div>
+					</div>
+					
+					<div class="box col-sm-5 col-md-3">
+						<div class="post-box vertical clearfix">
+							<a onclick="Show(1)" class="image-link arrow-icon"><%= image_tag 'media/pic/1.jpg', width:'434', height:'434' %></a>
+							<div class="extra-info">
+								<p class="meta small">2015.05 ~ 2015.10 </p>
+								<h5><a onclick="Show(1)">해방촌 지역문화콘텐츠 기획 프로젝트 UCC '해방촌의 하루'</a></h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="box col-sm-6 col-md-3">
+						<div class="post-box vertical clearfix">
+							<div class="extra-info">
+								<p class="meta small">2016.09.27 ~ 2016.09.29</a></p>
+								<h5><a onclick="Show(2)">2016 백석대학교 한복축제 메인홍보영상</a></h5>
+							</div>
+							<a onclick="Show(2)" class="image-link arrow-icon dark-overlay"><%= image_tag 'project/2/main.jpg', width:'434', height:'434' %></a>
+						</div>
+					</div>
+
+					<div class="box col-sm-6">
+						<div class="post-box horizontal clearfix">
+							<a onclick="Show(3)" class="image-link play-icon dark-overlay"><%= image_tag 'project/2/main.jpg', width:'434', height:'434' %></a>
+							<div class="extra-info">
+								<p class="meta small">2015.05 ~ 2015.10</a></p>
+								<h5><a onclick="Show(3)">골목길 플레이 디렉터 UCC 'Let's play in the alley'</a></h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="box col-sm-6">
+						<div class="post-box horizontal clearfix">
+							<div class="extra-info">
+								<p class="meta small">2015.10.30</a></p>
+								<h5><a onclick="Show(4)">전주 한복테마 문화공간 '한복길' 사진길 홍보영상</a></h5>
+							</div>
+							<a onclick="Show(4)" class="image-link arrow-icon"><%= image_tag 'project/2/main.jpg', width:'434', height:'434' %></a>
+							
+						</div>
+					</div>
+					
+					<div class="box col-sm-6">
+						<div class="post-box horizontal clearfix">
+							<div class="extra-info">
+								<p class="meta small">2015.05 ~ 2015.10</a></p>
+								<h5><a onclick="Show(5)">골목길 플레이 디렉터 UCC 'Let's play in the alley'</a></h5>
+							</div>
+							<a onclick="Show(5)" class="image-link arrow-icon"><%= image_tag 'project/2/main.jpg', width:'434', height:'434' %></a>
+							
+						</div>
+					</div>
+					
+					<div class="box col-sm-6">
+						<div class="post-box horizontal clearfix">
+							<a onclick="Show(6)" class="image-link play-icon dark-overlay"><%= image_tag 'project/2/main.jpg', width:'434', height:'434' %></a>
+							<div class="extra-info">
+								<p class="meta small">2015.05 ~ 2015.10</a></p>
+								<h5><a onclick="Show(6)">골목길 플레이 디렉터 UCC 'Let's play in the alley'</a></h5>
+							</div>
+						</div>
+					</div>
+
+					<!--div class="box col-sm-12 text-center">
+						<a href="blog.html" class="button color no-bottom">Load More Posts</a>
+					</div-->
+
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+<!-- 메인 부분 종료 -->
+
+
+<!-- 푸터바 부분 -->
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<p>
+				<a href="index.html" class="mini-logo"><%= image_tag 'logo-footer.png', width:'90', height:'33', alt:'Logo' %></a>
+			</p>
+			<p>&copy; <b>AnT</b> 대표 임희용 │ 사업자등록번호. 722-09-00160
+			<br>OFFICE. 천안 서북구 성환읍 대학로 91 남서울대학교 지식정보관 328호
+			<br>Email. antcultures@gmail.com │ TEL. 010-8761-4235 </p>
+			<p></p>
+			<p>
+				
+				<a href="contact.html" class="social-link"><i class="fa fa-address-book"></i></a>
+				<a href="https://www.youtube.com/channel/UCdJkxbgtoBqsXBFcQY9yhTA" class="social-link"><i class="fa fa-youtube-play"></i></a>
+				<a href="https://www.facebook.com/AlleyNT/?fref=ts" class="social-link"><i class="fa fa-facebook"></i></a>
+			</p>
+		</div>
+	</footer>
+<!--푸터바 부분 종료 -->
+
+
+
+<!-- 정보창 -->
+<div id="content" class="white-background moreinfo" role="main" style="display:none">
+		<img src="../assets/close.png" id="close"/>
+		<div class="container">
+			
+			<div class="row">
+				<div class="margin-6"></div>
+				<iframe id="videoUrl" width="100%" height="600"  src="" frameborder="0" allowfullscreen></iframe>
+			
+				<div class="margin-4"></div>
+				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+					<h2 id="videoId" class="single-title no-bottom">Putting Mobile Backend as a Service into Practice</h2>
+					<p id="videoDate" class="post-meta"><span></span></p>
+					<p id="videoInfo">We are a digital agency with 20 plus years of collective experience in advert business like this takes a greater effort than doing your own business. What's happened to me? He thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table.</p>
+				</div>
+			</div>
+			
+			<div class="margin-5"></div>
+		</div>
+</main>
+
+
+
+<!-- 정보창 끝 -->
+
+<script>
+	$(".menuBtn").click(function(){
+			 window.location.reload();
+		})
+		
+	function Show(num){
+		$("#footer").hide();
+		$("#top").hide();
+		$(".mainview").hide();
+		$(".moreinfo").show();
+		
+		switch(num){
+			case 1 : $("#videoUrl").attr("src","https://www.youtube.com/embed/QmtHG04ELzg");
+					   $("#videoId").html("해방촌 지역문화콘텐츠 기획 프로젝트 UCC '해방촌의 하루'");
+					   $("#videoDate").html("2015. 05 ~ 2015. 10");
+					   $("#videoInfo").html("");
+					   break;
+			case 2 : $("#videoUrl").attr("src","https://www.youtube.com/embed/M9X0duvNa4c");
+					   $("#videoId").html("2016 백석대학교 한복축제 메인홍보영상");
+					   $("#videoDate").html("2016.09.27 ~ 2016.09.29");
+					   $("#videoInfo").html("");
+					   break;
+			case 3 : $("#videoUrl").attr("src","https://www.youtube.com/embed/K11EElMbX88");
+					   $("#videoId").html("골목길 플레이 디렉터 UCC 'Let's play in the alley'");
+					   $("#videoDate").html("2015.05 ~ 2015.09.29");
+					   $("#videoInfo").html("");
+					   break;
+			case 4 : $("#videoUrl").attr("src","https://www.youtube.com/embed/KOJ7yyTTegk");
+					   $("#videoId").html("전주 한복테마 문화공간 '한복길' 사진길 홍보영상");
+					   $("#videoDate").html("2015.10.30");
+					   $("#videoInfo").html("");
+					   break;		   
+		}
+	}
+	
+	$("#close").click(function(){
+		$("#footer").show();
+		$("#top").show();
+		$(".mainview").show();
+		$(".moreinfo").hide();
+	})
+	
+</script>
