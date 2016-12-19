@@ -28,6 +28,6 @@ class HomeController < ApplicationController
     message_id = result['id']
     message = result['message']
     
-    
+    redirect_to :back
   end
 end
