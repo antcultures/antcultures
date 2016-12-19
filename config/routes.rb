@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/item' => "home#item"
   get '/media' => "home#media"
   get '/contact' => "home#contact"
+  
+  post '/sendemail' =>"home#sendemail"
 
   root 'home#index' 
 
