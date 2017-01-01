@@ -4067,8 +4067,9 @@ img.round {
 
 #bdiv {
   position:absolute;
-  /*background-image: url('home/background.jpg') ; */
-  background-image: image-url("home/background.jpg");
+  background-image: url('/assets/home/background.jpg') ;
+  
+ 
 
 	  
   background-size:cover;
@@ -4076,7 +4077,7 @@ img.round {
   width:100%;
   -webkit-background-size:cover;
   -moz-background-size:cover;
-  background-size:cover;
+ 
   overflow:hidden;
   
 }
@@ -4142,24 +4143,26 @@ img.round {
 
 /* 메인 버튼 */
 .myButton {
-	background-color:transparent;
+	background-color:#ffffff;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;
 	border:1px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
-	color:#1c1c1c;
+	color:#000000;
 	font-family:Arial;
 	font-size:17px;
-	padding:16px 31px;
+	padding:8px 20px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
+	 opacity : 0.6;
 }
 .myButton:hover {
-	background-color:transparent;
+	background-color:#ffffff;
 }
 .myButton:active {
 	position:relative;
 	top:1px;
 }
+
