@@ -182,18 +182,27 @@
 
 
 <!-- 정보창  -->
-	<main id="content" class="white-background moreinfo" role="main" style="display:none" >
+	<main id="content" class="white-background moreinfo" role="main" >
 		
 		<%=image_tag "close.png", :id =>"close" %>
 		<div class="container">
 			<h2 class="single-title" id="info_title">The Nordic Branding</h2>
 			<div id="info_pic" class="owl-carousel owl-slider">
-				<img src="" id="info_pic_1" width="1240" height="698" alt="">
-				<img src="" id="info_pic_2" width="1240" height="698" alt="">
-				<img src="" id="info_pic_3" width="1240" height="698" alt="">
-                <img src="" id="info_pic_4" width="1240" height="698" alt="">
-                <img src="" id="info_pic_5" width="1240" height="698" alt="">
-				
+				<div class="photo">
+					<img src="" id="info_pic_1" width="1240" height="698" alt="">
+				</div>
+				<div class="photo">
+					<img src="" id="info_pic_2" width="1240" height="698" alt="">
+				</div>
+				<div class="photo">
+					<img src="" id="info_pic_3" width="1240" height="698" alt="">
+				</div>
+				<div class="photo">
+					<img src="" id="info_pic_4" width="1240" height="698" alt="">
+				</div>
+				<div class="photo">
+					<img src="" id="info_pic_5" width="1240" height="698" alt="">
+				</div>
 				
 			</div>
 			<div class="margin-3"></div>
@@ -217,7 +226,12 @@
 	</main>
 
 <script>
-	
+	$(document).ready(function(){
+    	$(".moreinfo").hide("fast");
+	})
+
+
+
 	$(".menuBtn").click(function(){
 			 window.location.reload();
 		})
@@ -348,7 +362,7 @@
 		$("#footer").show();
 		$("#top").show();
 		$(".mainview").show("fast");
-		$(".moreinfo").hide("fast");
+		
 		
 	})
 	
