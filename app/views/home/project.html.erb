@@ -227,7 +227,7 @@
 
 <script>
 	$(document).ready(function(){
-    	$(".moreinfo").hide("fast");
+    	$(".moreinfo").hide();
 	})
 
 
@@ -358,7 +358,7 @@
 	}
 	
 	$("#close").click(function(){
-		
+		$(".moreinfo").hide("fast");
 		$("#footer").show();
 		$("#top").show();
 		$(".mainview").show("fast");
@@ -370,7 +370,8 @@
 			items   : 1,
 			nav     : true,
 			navText : ['', ''],
-			loop    : true
+			loop    : false,
+			dots 	: true
 		});
 
 </script>
