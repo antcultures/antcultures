@@ -1,7 +1,6 @@
 /*
 
-Exa - Agency/Freelancer Creative Portfolio HTML Template
-http://themeforest.net/user/liviu_cerchez
+
 
 Table of contents:
 
@@ -4083,7 +4082,7 @@ img.round {
 }
 #bdiv2 {
   position:absolute;
-  background-color: rgba( 0, 0, 0, 0.4 );
+  background-color: rgba( 255, 255, 255, 0.3 );
   background-size:cover;
   height:100%;
   width:100%;
@@ -4143,7 +4142,7 @@ img.round {
 
 /* 메인 버튼 */
 .myButton {
-	background-color:#ffffff;
+	background-color:rgba( 255, 255, 255, 0.3 );
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;
@@ -4156,7 +4155,7 @@ img.round {
 	padding:8px 20px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
-	 opacity : 0.6;
+	
 }
 .myButton:hover {
 	background-color:#ffffff;
@@ -4165,4 +4164,28 @@ img.round {
 	position:relative;
 	top:1px;
 }
+
+
+/* Top btn */
+#toTop { z-index:1030;
+    width: 40px;
+    border: 2px solid #f3f3f3;
+    background: #f3f3f3;
+    text-align: center;
+    position: fixed;
+    bottom: 10px; right: 10px;
+    cursor: pointer; display: none;
+    color: #333; opacity: 0.6;
+    filter: alpha(opacity=60);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 20px;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear; padding: 5px; }
+    
+#toTop:hover { background: #b3b3b3; border: 2px solid #b3b3b3; } 
+
 

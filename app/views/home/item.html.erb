@@ -82,9 +82,9 @@
 				<h6>Item</h6>
 				<div class="sep red margin-1"></div>
 				<div class="owl-carousel owl-thumbs">
-					<div class="thumb dark-overlay">
+					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/1.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">3M 셀카봉</span></span>
 							</a>
@@ -92,15 +92,15 @@
 					</div>
 					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/2.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">런칭기념이벤트</span></span>
 							</a>
 						</div>
 					</div>
-					<div class="thumb dark-overlay">
+					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/3.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">부스 운영</span></span>
 							</a>
@@ -108,15 +108,15 @@
 					</div>
 					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/4.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">상가연계</span></span>
 							</a>
 						</div>
 					</div>
-					<div class="thumb dark-overlay">
+					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/5.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">전통놀이</span></span>
 							</a>
@@ -124,15 +124,15 @@
 					</div>
 					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/6.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">플래쉬몹</span></span>
 							</a>
 						</div>
 					</div>
-					<div class="thumb dark-overlay">
+					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/7.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">한복가요제</span></span>
 							</a>
@@ -140,15 +140,15 @@
 					</div>
 					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/8.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">한복메이크업</span></span>
 							</a>
 						</div>
 					</div>
-					<div class="thumb dark-overlay">
+					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/9.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">한복부킹</span></span>
 							</a>
@@ -156,15 +156,15 @@
 					</div>
 					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/10.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">한복콘테스트</span></span>
 							</a>
 						</div>
 					</div>
-					<div class="thumb dark-overlay">
+					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/11.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">한복클럽</span></span>
 							</a>
@@ -172,7 +172,7 @@
 					</div>
 					<div class="thumb">
 						<div class="photo">
-							<a href="project.html">
+							<a>
 								<%= image_tag 'hannol/pic/12.jpg', width:'434', height:'434' %>
 								<span class="info"><span class="big-excerpt">한복마블</span></span>
 							</a>
@@ -213,12 +213,14 @@
 
 <script>
 		jQuery(".owl-carousel.owl-thumbs").owlCarousel({
+			
 			items   : 3,
 			margin  : 30,
 			nav     : true,
 			navText : ['', ''],
 			dots    : false,
 			loop    : false,
+			
 			responsive : {
 				0: {
 					items : 2

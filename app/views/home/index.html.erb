@@ -1,11 +1,12 @@
 <div id="bdiv" >
 	<div id="bdiv2">
 		<div id="cdiv">
-			<h1 class="fwhite"><%=image_tag 'home/logo.png' ,width:'50%' %></h1>
+			<h1 class="fwhite"><%=image_tag 'home/logo_full.png' ,width:'30%' %></h1>
 			
 			<div class="hot-container">
 				<p>
 					<a class="btn btn-default myButton" href="about.html" class="menuBtn" >&nbsp;About&nbsp;</a>
+					&nbsp;&nbsp;
 					<a class="btn btn-default myButton" href="project.html" class="menuBtn">Project</a>
 					
 				</p>
@@ -16,4 +17,10 @@
 </div>
 
 
-
+<script>
+	$(".myButton").click(function(){
+				
+				
+				 window.location.reload();
+			})
+</script>

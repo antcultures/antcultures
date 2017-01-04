@@ -22,5 +22,12 @@
 
 <script src="https://use.fontawesome.com/17760246f0.js"></script>
 
+<script>
+    $(document).ready(function(){
+        $('body').append(
+            '<div id="toTop"><i class="fa fa-angle-double-up"></i></div>');
+        $("#toTop").bind("click", function () {$("body").animate({ scrollTop: 0 }, 200);}); $(window).scroll(function () { if ($(this).scrollTop() != 0) { $('#toTop').fadeIn(); } else { $('#toTop').fadeOut(); } }); }); 
+
+</script>
 </body>
 </html>

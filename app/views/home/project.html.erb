@@ -32,14 +32,14 @@
 
 <!-- 메인 부분 시작 -->
 
-<main id="content" role="main">
+<main id="content" class="mainview" role="main">
 		<div class="container container-masonry">
 			<div class="inner">
 				<div class="row">
 					<div class="box col-sm-4 col-md-6">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(1)">
 									<%= image_tag 'project/1/main.jpg', width:'715', height:'715' %>
 									<span class="info"><strong class="title">해방촌 청소년 강의</strong><span class="excerpt">해방촌 주민 커뮤니티 '달꽃창작소'의 학생들과 함께 마을 해설프로그램 진행</span><em class="arrow-right"></em></span>
 								</a>
@@ -49,7 +49,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(2)">
 									<%= image_tag 'project/2/main.jpg', width:'434', height:'434' %>
 									
 									<span class="info"><strong class="title">해방촌 마을지도 제작</strong><span class="excerpt">이색적인 스팟과 재미난 테마 코스, 특색 있는 상가들이 한데 어우러져 있는 해방촌 마을지도</span><em class="arrow-right"></em></span>
@@ -60,7 +60,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(3)">
 									<%= image_tag 'project/3/main.jpg', width:'434', height:'434' %>
 									<span class="info"><strong class="title">해방촌 마을축제 기획</strong><span class="excerpt">학생들부터 노인까지 주민 모두가 축제 주최자이자 참가자가 되는 공존 페스티벌</span><em class="arrow-right"></em></span>
 								</a>
@@ -70,7 +70,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(4)">
 									<%= image_tag 'project/4/main.jpg', width:'434', height:'434' %>
 									<span class="info"><strong class="title">온라인 취미공유 플랫폼 ‘UNIVALUE' 제작</strong><span class="excerpt">이곳에서 우리는 서로의 생각과 가치를 공유하며 이해하고 그를 통해 함께 성장해나갑니다</span><em class="arrow-right"></em></span>
 								</a>
@@ -80,7 +80,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(5)">
 									<%= image_tag 'project/5/main.jpg', width:'434', height:'434' %>
 									<span class="info"><strong class="title">천안 원도심 활성화 프로젝트</strong><span class="excerpt">골목길 플레이 디렉터 지역콘텐츠 기획 프로젝트</span><em class="arrow-right"></em></span>
 								</a>
@@ -90,7 +90,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(6)">
 									<%= image_tag 'project/6/main.jpg', width:'434', height:'434' %>
 									<span class="info"><strong class="title">전주 한옥마을 ‘달달수월래’ 퍼레이드 기획</strong><span class="excerpt">전주한옥마을의 멋스러움과 우리나라 전통놀이 강강술래를 알리는 제1회 ‘달달수월래’ 축제</span><em class="arrow-right"></em></span>
 								</a>
@@ -100,7 +100,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(7)">
 									<%= image_tag 'project/7/main.jpg', width:'434', height:'434' %>
 									<span class="info"><strong class="title">전주 한옥마을 문화공간 ‘한복길’ 기획</strong><span class="excerpt">먹거리와 지루함에 숨겨진 한옥마을의 골목길과 우리의 아름다운 전통 의복 한복과의 만남 </span><em class="arrow-right"></em></span>
 								</a>
@@ -110,7 +110,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(8)">
 									<%= image_tag 'project/8/main.jpg', width:'434', height:'434' %>
 									<span class="info"><strong class="title">2016 남서울대학교 한복축제</strong><span class="excerpt">한복과 할로윈의 만남<br>2016 남서울대 한복축제 ‘한로윈’</span><em class="arrow-right"></em></span>
 								</a>
@@ -120,7 +120,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(9)">
 									<%= image_tag 'project/9/main.jpg', width:'434', height:'434' %>
 									<span class="info"><strong class="title">2016 백석대학교 한복축제</strong><span class="excerpt">한복과 백의민족의 만남<br>2016 백석대학교 한복축제 ‘한복판’</span><em class="arrow-right"></em></span>
 								</a>
@@ -130,7 +130,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(10)">
 									<%= image_tag 'project/10/main.jpg', width:'434', height:'434' %>
 									<span class="info"><strong class="title">전주문화공간 '한복길' 테마지도&캐릭터 제작</strong><span class="excerpt">전주한옥마을 문화공간 ‘한복길’<br>7가지 테마코스 ‘한복길’ 테마지도</span><em class="arrow-right"></em></span>
 								</a>
@@ -140,7 +140,7 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a href="project.html">
+								<a onclick="Show(11)">
 									<%= image_tag 'project/11/main.jpg', width:'434', height:'434' %>
 									<span class="info"><strong class="title">천사책(천안사람들이야기책)</strong><span class="excerpt">“우리 이웃들의 이야기가 모이면 어떤 재미난 일이 일어날까?”<br>우리 지역 개인들의 이야기가 담겨있는 책입니다.</span><em class="arrow-right"></em></span>
 								</a>
@@ -181,10 +181,178 @@
 <!--푸터바 부분 종료 -->
 
 
+<!-- 정보창  -->
+	<main id="content" class="white-background moreinfo" role="main" style="display:none" >
+		
+		<%=image_tag "close.png", :id =>"close" %>
+		<div class="container">
+			<h2 class="single-title" id="info_title">The Nordic Branding</h2>
+			<div id="info_pic" class="owl-carousel owl-slider">
+				
+				
+				
+			</div>
+			<div class="margin-3"></div>
+			<div class="row">
+				<div class="col-sm-4 col-md-3 project-properties">
+					<h6 style="display:none">How</h6>
+					<p style="display:none" id="info_how" class="small">The Nordic Smorrebrod Food</p>
+					<h6>WHO</h6>
+					<p id="info_who" class="small">AnT Cultures</p>
+					<h6 style="display:none">WHEN</h6>
+					<p  style="display:none" id="info_when" class="small">July 30th, 2015</p>
+				</div>
+				<div class="col-sm-8 col-md-8 col-md-offset-1">
+					<h6>COMMENT</h6>
+					<p id="info_com">The Nordic were very skeptical when they first contacted us. They are a startup Coffee house and a small chain of family restaurants. Their brief learly depicted that it wasn't simply a lorem ipsum or dream. His room, a proper human <a href="#">Themeforest Exa</a> a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table.</p>
+					
+					<div class="margin-1"></div>
+					
+				</div>
+			</div>
+	</main>
 
 <script>
 	
 	$(".menuBtn").click(function(){
 			 window.location.reload();
 		})
+	
+	function Show(num){
+		$("#footer").hide();
+		$("#top").hide();
+		$(".mainview").hide("fast");
+		$(".moreinfo").show("fast");
+		window.scrollTo(0,0);
+		switch(num){
+			case 1 : 
+					for(var i =1 ; i<=5 ; i++){
+					 	$("#info_pic").append("<&#37;= image_tag 'project/" + num + "/" + i + ".jpg', width:'1240', height:'698', :id=>'info_pic_" + i +"' %>");
+						
+						
+					}
+					 $("#info_title").html("해방촌 청소년 강의");
+					 $("#info_how").html("");
+					 $("#info_when").html("");
+					 $("#info_com").html("해방촌 주민 커뮤니티 '달꽃창작소'의 학생들과 함께 마을 해설 프로그램 진행 <br>학생들이 자기마을을 소개하고 '마을 해설사'로서 일할 수 있도록 지역문화 강의");
+					   break;
+			case 2 : $("#info_pic_1").attr("src","/assets/project/"+num+"/1.jpg");
+					 $("#info_pic_2").attr("src","/assets/project/"+num+"/2.jpg");
+					 $("#info_pic_3").attr("src","/assets/project/"+num+"/3.jpg");
+					 $("#info_pic_4").attr("src","/assets/project/"+num+"/4.jpg");
+					 $("#info_pic_5").attr("src","/assets/project/"+num+"/5.jpg");
+					 $("#info_title").html("해방촌 마을지도·엽서 제작");
+					 $("#info_how").html("");
+					 $("#info_when").html("");
+					 $("#info_com").html("이색적인 스팟과 재미난 테마 코스, 특색 있는 상가들이 한데 어우러져 있는 해방촌 마을지도 <br>거주민들과 함께 해방촌을 재미나게 즐길 수 있는 하나의 놀이 컨텐츠로 기획");
+					   break;
+			case 3 : $("#info_pic_1").attr("src","/assets/project/"+num+"/1.jpg");
+					 $("#info_pic_2").attr("src","/assets/project/"+num+"/2.jpg");
+					 $("#info_pic_3").attr("src","/assets/project/"+num+"/3.jpg");
+					 $("#info_pic_4").attr("src","/assets/project/"+num+"/4.jpg");
+					 $("#info_pic_5").attr("src","/assets/project/"+num+"/5.jpg");
+					 $("#info_title").html("해방촌 마을축제 기획");
+					 $("#info_how").html("");
+					 $("#info_when").html("");
+					 $("#info_com").html("문화와 세대를 아우르는 주민 참여형 축제 해방촌 '토요놀이마당' <br>학생들부터 노인까지 주민 모두가 축제 주최자이자 참가자가 되는 공존 페스티벌");
+					   break;
+			case 4 : $("#info_pic_1").attr("src","project/"+num+"/1.jpg");
+					 $("#info_pic_2").attr("src","project/"+num+"/2.jpg");
+					 $("#info_pic_3").attr("src","project/"+num+"/3.jpg");
+					 $("#info_pic_4").attr("src","project/"+num+"/4.jpg");
+					 $("#info_pic_5").attr("src","project/"+num+"/5.jpg");
+					 $("#info_title").html("온라인 취미공유 플랫폼 ‘UNIVALUE' 제작");
+					 $("#info_how").html("");
+					 $("#info_when").html("");
+					 $("#info_com").html("A new type of 'open college'<br>다양하고 재미난 생각들이 의미 있는  시간을 만들어 냅니다.<br>이곳에서 우리는 서로의 생각과 가치를 공유하며 이해하고 그를 통해 함께 성장해 나갑니다.");
+					   break;
+			case 5 : $("#info_pic_1").attr("src","project/"+num+"/1.jpg");
+					 $("#info_pic_2").attr("src","project/"+num+"/2.jpg");
+					 $("#info_pic_3").attr("src","project/"+num+"/3.jpg");
+					 $("#info_pic_4").attr("src","project/"+num+"/4.jpg");
+					 $("#info_pic_5").attr("src","project/"+num+"/5.jpg");
+					 $("#info_title").html("천안 원도심 활성화 프로젝트");
+					 $("#info_how").html("");
+					 $("#info_when").html("");
+					 $("#info_com").html("천안 원도심 커뮤니티 활성화 프로젝트<br>골목길 플레이 디렉터 지역콘텐츠 기획 프로젝트<br>맛있는 곳, 만남, 그리고 엽서<br>&quot;골목길을 걸으며 재미난 플레이 콘텐츠로 문화를 기획한다&quot;"); 
+					   break;
+			case 6 : $("#info_pic_1").attr("src","project/"+num+"/1.jpg");
+					 $("#info_pic_2").attr("src","project/"+num+"/2.jpg");
+					 $("#info_pic_3").attr("src","project/"+num+"/3.jpg");
+					 $("#info_pic_4").attr("src","project/"+num+"/4.jpg");
+					 $("#info_pic_5").attr("src","project/"+num+"/5.jpg");
+					 $("#info_title").html("전주 한옥마을 ‘달달수월래’ 퍼레이드 기획");
+					 $("#info_how").html("");
+					 $("#info_when").html("");
+					 $("#info_com").html("전주 한옥마을의 멋스러움과 우리나라 전통놀이 강강술래를 알리는 제1회 '달달수월래' 축제<br>'달달수월래' 축제의 시작을 알리는 한옥마을 길거리 퍼레이드"); 
+					   break;
+			case 7 : $("#info_pic_1").attr("src","project/"+num+"/1.jpg");
+					 $("#info_pic_2").attr("src","project/"+num+"/2.jpg");
+					 $("#info_pic_3").attr("src","project/"+num+"/3.jpg");
+					 $("#info_pic_4").attr("src","project/"+num+"/4.jpg");
+					 $("#info_pic_5").attr("src","project/"+num+"/5.jpg");
+					 $("#info_title").html("전주 한옥마을 문화공간 ‘한복길’ 기획");
+					 $("#info_how").html("");
+					 $("#info_when").html("");
+					 $("#info_com").html("먹거리와 지루함에 숨겨진 한옥마을의 골목길과 우리의 아름다운 전통 의복 한복과의 만남<br>&quot;한복을 입고 재미나게 노는 당신의 모습이 보고 싶습니다&quot;<br>전주 한옥마을을 재미나게 즐길 수 있는 새로운 문화공간 7가지 테마코스 '한복길'"); 
+					   break;
+			case 8 : $("#info_pic_1").attr("src","project/"+num+"/1.jpg");
+					 $("#info_pic_2").attr("src","project/"+num+"/2.jpg");
+					 $("#info_pic_3").attr("src","project/"+num+"/3.jpg");
+					 $("#info_pic_4").attr("src","project/"+num+"/4.jpg");
+					 $("#info_pic_5").attr("src","project/"+num+"/5.jpg");
+					 $("#info_title").html("2016 남서울대학교 한복축제");
+					 $("#info_how").html("");
+					 $("#info_when").html("");
+					 $("#info_com").html("한복과 할로윈의 만남 <br>2016 남서울대 한복축제 '한로윈'"); 
+					   break;
+			case 9 : $("#info_pic_1").attr("src","project/"+num+"/1.jpg");
+					 $("#info_pic_2").attr("src","project/"+num+"/2.jpg");
+					 $("#info_pic_3").attr("src","project/"+num+"/3.jpg");
+					 $("#info_pic_4").attr("src","project/"+num+"/4.jpg");
+					 $("#info_pic_5").attr("src","project/"+num+"/5.jpg");
+					 $("#info_title").html("2016 백석대학교 한복축제");
+					 $("#info_how").html("");
+					 $("#info_when").html("");
+					 $("#info_com").html("한복과 백의민족의 만남 <br>2016 백석대학교 한복축제 '한복판'"); 
+					   break;
+			case 10 : $("#info_pic_1").attr("src","project/"+num+"/1.jpg");
+					  $("#info_pic_2").attr("src","project/"+num+"/2.jpg");
+					  $("#info_pic_3").attr("src","project/"+num+"/3.jpg");
+					  $("#info_pic_4").attr("src","project/"+num+"/4.jpg");
+					  $("#info_pic_5").attr("src","project/"+num+"/5.jpg");
+					  $("#info_title").html("전주문화공간 '한복길' 테마지도&캐릭터 제작");
+					  $("#info_how").html("");
+					  $("#info_when").html("");
+					  $("#info_com").html("전주한옥마을 문화공간 '한복길'<br>7가지 테마코스 '한복길'테마지도<br>'한복길'을 유쾌하게 소개해주고 재미나게 즐길 수 있게 도와주는 귀여운 캐릭터<br>우리 동네 지역문화콘텐츠 개발을 통한 홍보효과 상승 기대"); 
+					   break;
+			case 11 : $("#info_pic_1").attr("src","project/"+num+"/1.jpg");
+					  $("#info_pic_2").attr("src","project/"+num+"/2.jpg");
+					  $("#info_pic_3").attr("src","project/"+num+"/3.jpg");
+					  $("#info_pic_4").attr("src","project/"+num+"/4.jpg");
+					  $("#info_pic_5").attr("src","project/"+num+"/5.jpg");
+					  $("#info_title").html("천사책(천안사람들이야기책)");
+					  $("#info_how").html("");
+					  $("#info_when").html("");
+					  $("#info_com").html("&quot;우리 이웃들의 이야기가 모이면 어떤 재미난 일이 일어날까?&quot;<br>'천사책'은 천안 사람들 이야기책의 줄임말 입니다<br>사업 이름에서도 알 수 있듯이 우리 지역 개인들의 이야기가 담겨있는 책입니다.<br>문화라는 커다란 테두리 안에서 그들 각자의 이야기를한권의 책에 담음으로서 많은 것을 이룰 수 있다고 생각합니다.<br>점점 삭막해지고 있는 현실 속 내 주변에 사는 사람들에 대한 관심으로 시작해 좀 더 적극적인 소통을 가능하게 하고 그러한 소통을 통해 다양한 문화를 만들  갈 수 있을 것입니다.");
+					   break;
+		}
+	}
+	
+	$("#close").click(function(){
+		
+		$("#footer").show();
+		$("#top").show();
+		$(".mainview").show("fast");
+		$(".moreinfo").hide("fast");
+		
+	})
+	
+	jQuery(".owl-carousel.owl-slider").owlCarousel({
+			items   : 1,
+			nav     : true,
+			navText : ['', ''],
+			loop    : true
+		});
+
 </script>
