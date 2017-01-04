@@ -228,6 +228,8 @@
 <script>
 	$(document).ready(function(){
     	$(".moreinfo").hide();
+    	 $.preLoadImages("/assets/project/1/1-25e7456525b95bea4598d581322d97d2557b1822d2700ed2fd015a07b3635488.jpg",
+    	 					"/assets/project/2/2-a9e19343b08316970db3ae4bd7a1fee671474ed0ef203d73d1f4c0ac6f615cc2.jpg")
 	})
 
 
@@ -358,6 +360,11 @@
 	}
 	
 	$("#close").click(function(){
+				$("#info_pic_1").attr("src","");
+				$("#info_pic_2").attr("src","");
+				$("#info_pic_3").attr("src","");
+				$("#info_pic_4").attr("src","");
+				$("#info_pic_5").attr("src","");
 		$(".moreinfo").hide("fast");
 		$("#footer").show();
 		$("#top").show();
