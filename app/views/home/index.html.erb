@@ -1,21 +1,28 @@
+<!-- 시작 메인화면 -->
 <div id="bdiv" >
 	<div id="bdiv2">
 		<div id="cdiv">
+			<!-- 로고 부분 -->
+			<!-- 수정을 원할 경우 image_tag '' 안의 사진 경로를 변경해주면 됨 -->
 			<h1 class="fwhite"><%=image_tag 'home/logo_full.png' ,width:'40%' %></h1>
-			
+			<!-- 로고 부분 종료-->
 			<div class="hot-container">
 				<p>
+					<!-- 버튼 부분 -->
+					<!-- 버튼 글자를 수정을 원할 경우에는 <a>About</a> <a> 태그 내의 내용을 수정하면 됩니다. -->
+					<!-- 이동 주소를 수정할 경우에는 href=" " 내를 수정하시면 됩니다. -->
+					<!-- 버튼 추가를 원하시면 <a></a> 이부분을 복사해서 추가하시면 됩니다. -->
 					<a class="btn btn-default myButton" href="about.html" class="menuBtn" >&nbsp;About&nbsp;</a>
 					&nbsp;&nbsp;
 					<a class="btn btn-default myButton" href="project.html" class="menuBtn">Project</a>
-					
+					<!-- 버튼 부분 종료 -->
 				</p>
 			</div>
 			<!--<button class="btn btn-success btn-lg" >Start</button> -->
 		</div>
 	</div>
 </div>
-
+<!-- 시작 메인화면 종료 -->
 
 <script>
 	$(".myButton").click(function(){

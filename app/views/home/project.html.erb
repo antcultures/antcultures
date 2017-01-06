@@ -36,27 +36,36 @@
 		<div class="container container-masonry">
 			<div class="inner">
 				<div class="row">
+					<!-- Project 메인 이미지 리스트 -->
+					<!-- 이 이미지는 큰 이미지 입니다. -->
 					<div class="box col-sm-4 col-md-6">
 						<div class="thumb">
 							<div class="photo">
-								<a onclick="Show(1)">
-									<%= image_tag 'project/1/main.jpg', width:'715', height:'715' %>
-									<span class="info"><strong class="title">해방촌 청소년 강의</strong><span class="excerpt">해방촌 주민 커뮤니티 '달꽃창작소'의 학생들과 함께 마을 해설프로그램 진행</span><em class="arrow-right"></em></span>
+								<a onclick="Show(12)">
+									<%= image_tag 'project/12/main.jpg', width:'715', height:'715' %>
+									
+									<span class="info"><strong class="title">천사책(천안사람들이야기책)</strong><span class="excerpt">“우리 이웃들의 이야기가 모이면 어떤 재미난 일이 일어날까?”<br>우리 지역 개인들의 이야기가 담겨있는 책입니다.</span><em class="arrow-right"></em></span>
 								</a>
 							</div>
 						</div>
 					</div>
+					
+					<!-- 여기서 부터의 이미지들은 작은 이미지 입니다.-->
+					<!-- 내용 추가를 원하실 경우에는  ☆복사하기☆ - 부분까지 복사하셔서 붙여넣으시면 이미지가 추가됩니다. -->
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
+								<!-- onclick 이 부분은 클릭시 내용을 출력해주는 스크립트 입니다. 하단<script> 부분에 설명을 보시면 이용하 실 수 있습니다.  -->
 								<a onclick="Show(2)">
+									<!-- image_tag '' 부분을 수정하시면 이미지를 추가하 실 수 있습니다. -->
 									<%= image_tag 'project/2/main.jpg', width:'434', height:'434' %>
-									
+									<!-- <strong></strong> 안의 내용을 수정하시면 제목이 바뀝니다. -->
 									<span class="info"><strong class="title">해방촌 마을지도 제작</strong><span class="excerpt">이색적인 스팟과 재미난 테마 코스, 특색 있는 상가들이 한데 어우러져 있는 해방촌 마을지도</span><em class="arrow-right"></em></span>
 								</a>
 							</div>
 						</div>
 					</div>
+					<!-- ☆ 복사하기 ☆ -->
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
@@ -140,14 +149,14 @@
 					<div class="box col-xs-6 col-sm-4 col-md-3">
 						<div class="thumb">
 							<div class="photo">
-								<a onclick="Show(11)">
-									<%= image_tag 'project/11/main.jpg', width:'434', height:'434' %>
-									<span class="info"><strong class="title">천사책(천안사람들이야기책)</strong><span class="excerpt">“우리 이웃들의 이야기가 모이면 어떤 재미난 일이 일어날까?”<br>우리 지역 개인들의 이야기가 담겨있는 책입니다.</span><em class="arrow-right"></em></span>
+								<a onclick="Show(1)">
+									<%= image_tag 'project/1/main.jpg', width:'434', height:'434' %>
+									<span class="info"><strong class="title">해방촌 청소년 강의</strong><span class="excerpt">해방촌 주민 커뮤니티 '달꽃창작소'의 학생들과 함께 마을 해설프로그램 진행</span><em class="arrow-right"></em></span>
 								</a>
 							</div>
 						</div>
 					</div>
-					
+					<!-- Project 메인 이미지 리스트 끝 -->
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -182,6 +191,8 @@
 
 
 <!-- 정보창  -->
+<!-- 사진을 클릭하시면 정보를 출력해주는 부분입니다 -->
+<!-- 이 부분은 출력 디자인을 변경하는 경우가 아니라면 수정 안하시는게 좋습니다. -->
 	<main id="content" class="white-background moreinfo" role="main" >
 		
 		<%=image_tag "close.png", :id =>"close" %>
@@ -225,11 +236,11 @@
 			</div>
 	</main>
 
+<!-- 스크립트 영역 -->
 <script>
 	$(document).ready(function(){
     	$(".moreinfo").hide();
-    	 $.preLoadImages("/assets/project/1/1-25e7456525b95bea4598d581322d97d2557b1822d2700ed2fd015a07b3635488.jpg",
-    	 					"/assets/project/2/2-a9e19343b08316970db3ae4bd7a1fee671474ed0ef203d73d1f4c0ac6f615cc2.jpg")
+    	
 	})
 
 
@@ -238,14 +249,29 @@
 			 window.location.reload();
 		})
 	
+	
+	
 	function Show(num){
 		$("#footer").hide();
 		$("#top").hide();
 		$(".mainview").hide("fast");
 		$(".moreinfo").show("fast");
 		window.scrollTo(0,0);
+		/*
+		<!-- Project 메인 이미지 리스트 -->스크립트 입니다. 
+		만일 위에서 내용을 추가하신 경우에는 <a onclick=Show(1)> 이 안의 숫자를 추가 해주시고 난 후에
+		여기 case를 추가해 주시면 됩니다.
+		현재 11번 까지 있으며 추가 될경우에 12, 13, 14 순으로 추가하시면 더 좋습니다.
+		*/
 		switch(num){
 			case 1 : 
+				/*
+					$("#info_pic_1~5")는 해당 위치의 이미지를 바꾸는 스크립트 입니다.
+					.attr("src","/assets/project/"+num+"/(이 부분을 사진 파일 입력)"); () 괄호 을 수정해주시면 됩니다.
+					사진을 넣으실 경우에  왼쪽에 workspace에서
+					app > assets > images > project > 숫자(위에 Show(숫자)와 일치 시켜 폴더를 만들어 주세요 ) > 사진 
+					에 사진을 넣어주시면 되며 사진은 1,2,3,4,5로 이름을 변경해서 넣어주시면 더 욱 편합니다. 
+				*/
 					 $("#info_pic_1").attr("src","/assets/project/"+num+"/1-25e7456525b95bea4598d581322d97d2557b1822d2700ed2fd015a07b3635488.jpg");
 					 $("#info_pic_2").attr("src","/assets/project/"+num+"/2-a9e19343b08316970db3ae4bd7a1fee671474ed0ef203d73d1f4c0ac6f615cc2.jpg");
 					 $("#info_pic_3").attr("src","/assets/project/"+num+"/3-dd30782993417bc7a5318768f9aa768cdc8cc25622f443f51d774e590e486e26.jpg");
@@ -356,6 +382,17 @@
 					  $("#info_when").html("");
 					  $("#info_com").html("&quot;우리 이웃들의 이야기가 모이면 어떤 재미난 일이 일어날까?&quot;<br>'천사책'은 천안 사람들 이야기책의 줄임말 입니다<br>사업 이름에서도 알 수 있듯이 우리 지역 개인들의 이야기가 담겨있는 책입니다.<br>문화라는 커다란 테두리 안에서 그들 각자의 이야기를한권의 책에 담음으로서 많은 것을 이룰 수 있다고 생각합니다.<br>점점 삭막해지고 있는 현실 속 내 주변에 사는 사람들에 대한 관심으로 시작해 좀 더 적극적인 소통을 가능하게 하고 그러한 소통을 통해 다양한 문화를 만들  갈 수 있을 것입니다.");
 					   break;
+					   
+			case 12 : $("#info_pic_1").attr("src","/assets/project/"+num+"/1-ad75544e30b732d467381380ff4495c0aa4e585478a52e7c7489c410764cf34f.jpg");
+					  $("#info_pic_2").attr("src","/assets/project/"+num+"/2-8619e864405fd5e00f7060e62ccb13a84fb6135c87ab42993ef70a81ca8ccace.jpg");
+					  $("#info_pic_3").attr("src","/assets/project/"+num+"/3-b8e27858b08f681306491850039d2695f0ed3e5e89ce034c4800e0bb1937e08e.jpg");
+					  $("#info_pic_4").attr("src","/assets/project/"+num+"/4-09ffbe8919427163895834d64a3c319a9cbbf041828729fe02f9585e4eea6e56.jpg");
+					  $("#info_pic_5").attr("src","/assets/project/"+num+"/5-f558f9d890fce3847234729f22e05c3f21f6706ff23b2942fe0d441b0bdebc79.jpg");
+					  $("#info_title").html("천사책(천안사람들이야기책)");
+					  $("#info_how").html("");
+					  $("#info_when").html("");
+					  $("#info_com").html("&quot;우리 이웃들의 이야기가 모이면 어떤 재미난 일이 일어날까?&quot;<br>'천사책'은 천안 사람들 이야기책의 줄임말 입니다<br>사업 이름에서도 알 수 있듯이 우리 지역 개인들의 이야기가 담겨있는 책입니다.<br>문화라는 커다란 테두리 안에서 그들 각자의 이야기를한권의 책에 담음으로서 많은 것을 이룰 수 있다고 생각합니다.<br>점점 삭막해지고 있는 현실 속 내 주변에 사는 사람들에 대한 관심으로 시작해 좀 더 적극적인 소통을 가능하게 하고 그러한 소통을 통해 다양한 문화를 만들  갈 수 있을 것입니다.");
+					   break;		   
 		}
 	}
 	
