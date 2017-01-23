@@ -30,10 +30,7 @@ jQuery(document).ready(function () { "use strict";
 	
 
 	/* handle both mouse hover and touch events for traditional menu + mobile hamburger */
-	jQuery('#top .site-menu-toggle').on('click',function(e) {
-		jQuery('#top').toggleClass('open-mobile-menu');
-		e.preventDefault();
-	});
+	
 
 	jQuery(document).on({
 		mouseenter: function () {
