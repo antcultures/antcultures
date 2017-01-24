@@ -238,14 +238,21 @@
 
 <!-- 스크립트 영역 -->
 <script>
+var cnt = 1;
 	$(document).ready(function(){
     	$(".moreinfo").hide();
     	
+    	
+		 if (self.name != 'reload') {
+         self.name = 'reload';
+         self.location.reload(true);
+     }
+     else self.name = ''; 
 	})
 
 
 
-//	$(".menuBtn").click(function(){
+//	$(".photo").click(function(){
 //			 window.location.reload();
 //		})
 	
