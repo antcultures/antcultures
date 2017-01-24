@@ -2535,6 +2535,93 @@ img.round {
 	    font-size:32px;
 	  }
 }
+/*  해상도 320 이하*/
+@media (min-width: 320px) {
+	h5{ font-size : 1.1em;}
+	h2{ font-size: 2.7em;}
+	h3{
+		font-size: 2.2em;
+	}
+	#videoUrl{
+		height:"320px";
+	}
+	.fwhite {
+	    font-size:32px;
+	  }
+	  
+	#top {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+	#site-menu ul {
+		margin-top: 2em;
+	}
+
+	.thumb.featured .info .big-title {
+		max-width: 70%;
+		
+	}
+
+	.thumb.featured .info .excerpt {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		max-width: 70%;
+	}
+
+	.team-container {
+		padding: 3em 1em;
+	}
+
+	.team-member {
+		float: left;
+		margin: 0 2%;
+		width: 46%;
+	}
+
+	.team-member.team-info {
+		float: none;
+		margin: 1em 2%;
+		width: 100%;
+	}
+
+	.team-member.team-info {
+		padding-top: 1.25em;
+	}
+
+	.clients-grid .client {
+		width: 25%;
+	}
+
+	.tab-container.vertical .tab_content {
+		float: right;
+		width: 65%;
+		padding: 1em 0;
+		border-top: 0;
+	}
+
+	.tab-container.vertical .tabs {
+		float: left;
+		width: 35%;
+	}
+
+	.tab-container.vertical .tabs li {
+		float: none;
+		margin: 0;
+	}
+
+	.tab-container.vertical .tabs li a {
+		padding: 1em;
+	}
+
+	.tab-container.vertical .tabs li.active:after {
+		bottom: 50%;
+		width: 4px;
+		height: 12px;
+		margin-bottom: -6px;
+	}
+
+}
 
 /* 20. Large mobile query (480px) */
 @media (min-width: 480px) {
